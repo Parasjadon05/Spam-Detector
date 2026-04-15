@@ -1,0 +1,251 @@
+.app {
+  padding: 2rem 1.5rem 3rem;
+  text-align: left;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.header h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.lede code {
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--code-bg);
+  color: var(--text-h);
+}
+
+.panel {
+  margin-top: 1.75rem;
+}
+
+.form-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.field-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  font: 0.95rem/1.4 var(--sans);
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.input:disabled {
+  opacity: 0.65;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-h);
+  margin-bottom: 0.35rem;
+}
+
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  font: 0.9rem/1.45 var(--mono);
+  padding: 0.75rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.textarea:disabled {
+  opacity: 0.65;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.15rem;
+  align-items: center;
+}
+
+.btn {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.btn.primary {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.btn.primary:not(:disabled):hover {
+  filter: brightness(1.05);
+}
+
+.btn.secondary {
+  background: var(--accent-bg);
+  color: var(--text-h);
+}
+
+.file-label {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.banner {
+  margin-top: 1.25rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.banner.error {
+  background: rgba(220, 38, 38, 0.12);
+  border: 1px solid rgba(220, 38, 38, 0.35);
+  color: var(--text-h);
+}
+
+@media (prefers-color-scheme: dark) {
+  .banner.error {
+    background: rgba(248, 113, 113, 0.12);
+    border-color: rgba(248, 113, 113, 0.35);
+  }
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--code-bg);
+}
+
+.result.spam {
+  border-color: rgba(220, 38, 38, 0.45);
+}
+
+.result.ham {
+  border-color: rgba(22, 163, 74, 0.45);
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.result-row.sub {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  font-size: 0.88rem;
+  opacity: 0.92;
+}
+
+.result-label {
+  font-size: 0.85rem;
+  color: var(--text);
+}
+
+.verdict {
+  font-size: 1.15rem;
+}
+
+.meter {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--border);
+  overflow: hidden;
+  margin: 0.75rem 0 0.5rem;
+}
+
+.meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+  transition: width 0.25s ease;
+}
+
+.result.spam .meter-fill {
+  background: #dc2626;
+}
+
+.result.ham .meter-fill {
+  background: #16a34a;
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.hint code {
+  font-size: 0.9em;
+}
+
+.footer {
+  margin-top: 2.5rem;
+  font-size: 0.8rem;
+  color: var(--text);
+}
+
+.footer code {
+  font-size: 0.85em;
+  word-break: break-all;
+}

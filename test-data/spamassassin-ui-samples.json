@@ -1,0 +1,69 @@
+{
+  "notes": "All examples below are sampled from the SpamAssassin public corpus used for training.",
+  "samples": [
+    {
+      "id": "sa_ham_00001",
+      "source_file": "easy_ham/00001.7c53336b37003a9286aba55d2945844c",
+      "expected_label": "ham",
+      "from": "Robert Elz <kre@munnari.OZ.AU>",
+      "subject": "Re: New Sequences Window",
+      "body": "I can't reproduce this error. For me it is very repeatable. This is the debug log of the pick happening and the command works correctly when run by hand with nmh-1.0.4."
+    },
+    {
+      "id": "sa_ham_00004",
+      "source_file": "easy_ham/00004.864220c5b6930b209cc287c361c99af1",
+      "expected_label": "ham",
+      "from": "Monty Solomon <monty@roscom.com>",
+      "subject": "[IRR] Klez: The Virus That Won't Die",
+      "body": "Posted article text about the Klez worm spreading on the web, with discussion of antivirus reports and a PC World link."
+    },
+    {
+      "id": "sa_ham_00005",
+      "source_file": "easy_ham/00005.bf27cdeaf0b8c4647ecd61b1d09da613",
+      "expected_label": "ham",
+      "from": "Stewart Smith <Stewart.Smith@ee.ed.ac.uk>",
+      "subject": "Re: [zzzzteana] Nothing like mama used to make",
+      "body": "Mailing-list discussion about pasta carbonara recipes, cream versus other ingredients, and personal cooking preferences."
+    },
+    {
+      "id": "sa_ham_00006",
+      "source_file": "easy_ham/00006.253ea2f9a9cc36fa0b1129b04b806608",
+      "expected_label": "ham",
+      "from": "Martin Adamson <martin@srv0.ems.ed.ac.uk>",
+      "subject": "Re: [zzzzteana] Nothing like mama used to make",
+      "body": "Reply discussing how carbonara is made with beaten egg and bacon or pancetta, and cooking by mixing egg with hot pasta."
+    },
+    {
+      "id": "sa_spam_00001",
+      "source_file": "spam/00001.7848dde101aa985090474a91ec93fcf0",
+      "expected_label": "spam",
+      "from": "12a1mailbot1@web.de",
+      "subject": "Life Insurance - Why Pay More?",
+      "body": "Save up to 70% on life insurance. Promotional claims about free quotes, lowest rates, and unsubscribe/remove instructions."
+    },
+    {
+      "id": "sa_spam_00002",
+      "source_file": "spam/00002.d94f1b97e48ed3b553b3508d116e6a09",
+      "expected_label": "spam",
+      "from": "Slim Down <taylor@s3.serveimage.com>",
+      "subject": "[ILUG] Guaranteed to lose 10-12 lbs in 30 days 10.206",
+      "body": "Multi-link ad blast: weight loss, cancer risk, legal advice, singles community, photo album, plus list-removal link."
+    },
+    {
+      "id": "sa_spam_00004",
+      "source_file": "spam/00004.eac8de8d759b7e74154f142194282724",
+      "expected_label": "spam",
+      "from": "Account Services <wsup@playful.com>",
+      "subject": "Re: Fw: User Name & Password to Membership To 5 Sites",
+      "body": "Adult club free-membership spam with fake account credentials, exaggerated membership stats, FAQ, and sign-up prompts."
+    },
+    {
+      "id": "sa_spam_00006",
+      "source_file": "spam/00006.5ab5620d3d7c6c0db76234556a16f6c1",
+      "expected_label": "spam",
+      "from": "TheCashSystem <Thecashsystem@firemail.de>",
+      "subject": "RE: Your Bank Account Information",
+      "body": "Get-rich-quick gifting program pitch claiming rapid cash flow and large testimonial amounts after joining."
+    }
+  ]
+}
