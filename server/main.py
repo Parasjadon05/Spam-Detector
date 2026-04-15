@@ -27,7 +27,7 @@ def _spam_decision_threshold() -> float:
 
 app = FastAPI(title="Spam Detector API", version="1.0.0")
 
-_cors = os.environ.get("CORS_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173")
+_cors = os.environ.get("CORS_ORIGINS", "https://spam-detector-web-zx0r.onrender.com")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[o.strip() for o in _cors.split(",") if o.strip()],
