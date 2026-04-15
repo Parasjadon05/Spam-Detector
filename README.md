@@ -64,3 +64,25 @@ Frontend URL: `http://127.0.0.1:5173`
 - `POST /health`
 - `POST /classify` with JSON body: `{ "text": "..." }`
 - `POST /classify/eml` with multipart file upload (`.eml`)
+
+## Deploy on Render
+
+This repo includes a Render blueprint file: `render.yaml`.
+
+1. Push latest code to GitHub.
+2. In Render, click **New +** -> **Blueprint**.
+3. Select this GitHub repo and deploy.
+
+Render creates two services:
+- `spam-detector-api` (FastAPI backend)
+- `spam-detector-web` (Vite static frontend)
+
+### Important after deploy
+
+- If your Render service names differ from:
+  - `spam-detector-api`
+  - `spam-detector-web`
+  update `render.yaml` env vars accordingly:
+  - backend `CORS_ORIGINS`
+  - frontend `VITE_API_BASE_URL`
+- Free plan services may sleep after inactivity, so first request can be slow.
